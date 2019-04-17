@@ -2,20 +2,22 @@
     --primary-color: #050533;
     --secondary-color: gold;
     --third-color: rgb(117, 0, 12);
-    /* #e7b502 */
 }
 
 h1 {
     font-family: Helvetica;
 }
 
-header {
+header, footer {
     background: var(--primary-color);
+    color: var(--secondary-color);
+}
+
+header {
     display: flex;
     align-content: center;
     justify-content: center;
     padding: 20px;
-    color: var(--secondary-color);
     position: fixed;
     width: 100%;
 }
@@ -64,6 +66,11 @@ header li:hover {
     height: 100vh;
 }
 
+.products, .contact, .about-content {
+    width: 80%;
+    margin: 0 auto;
+}
+
 .home {
     background-image: url('./media/QuantexHome.jpg');
     background-size: cover;
@@ -83,40 +90,74 @@ header li:hover {
     margin-top: 10px;
     width: 80%;
     color: white;
-    font-size: 64px;
+    font-size: 5em;
     text-align: center;
     text-shadow: 2px 2px black;
     text-align: center;
 }
 
 .home h2 {
-    font-size: 44px;
+    font-size: 3em;
     color: rgb(192, 192, 192);
     text-shadow: 2px 2px black;
+    word-spacing: 15px;
 }
 
-.products {
+.products, .about-content, .contact {
     display: flex;
     flex-direction: column;
 }
 
-.products h1 {
+.products h1, .about h1, .contact h1 {
     font-size: 40px;
     border-style: solid;
     border-color: black;
     border: 5px;
     font-weight: bold;
     margin: 0 auto;
-    margin-top: 40px;
+    margin-top: 100px;
 }
 
 .products h2 {
     font-size: 30px;
     font-family: Arial, Helvetica, sans-serif;
+    margin-bottom: 20px;
 }
 
 .products-column {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
+}
+
+.product, .about p {
+    margin-top: 65px;
+}
+
+.product p, .about-content p {
+    font-size: 1.2em;
+}
+
+.product img {
+    height: 200px;
+    width: auto;
+}
+
+.product-content>div {
+    margin: 15px;
+}
+
+.product-content {
+    display: flex;
+    flex-direction: row;
+}
+
+.about {
+    background: #f8f9fa;
+}
+
+.contact img {
+    height: 500px;
+    width: 500px;
+    margin-top: 60px;
 }
