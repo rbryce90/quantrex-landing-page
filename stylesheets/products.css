@@ -1,0 +1,39 @@
+.products h2 {
+    margin-bottom: 20px;
+}
+
+.products-column {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.product img {
+    height: 25vh;
+    width: auto;
+}
+
+.products p {
+    font-size: 3vh;
+}
+
+.product-content>div {
+    margin: 15px;
+}
+
+@media (max-width:1025px) {
+    .product-content {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .products {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #erp {
+        display: flex;
+        flex-direction: column;
+    }
+}

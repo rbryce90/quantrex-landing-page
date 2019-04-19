@@ -1,0 +1,22 @@
+.about {
+    background: #f8f9fa;
+    overflow: auto
+}
+
+.about-content p {
+    line-height: 90px;
+    font-size: 5vh;
+}
+
+@media (max-width:1025px) {
+    .about {
+        display: flex;
+        margin-top: 600px;
+    }
+
+    .about-content p {
+        line-height: 40px;
+        font-size: 3vh;
+
+    }
+}
